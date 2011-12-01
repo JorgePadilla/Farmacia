@@ -1,11 +1,11 @@
-<h1>Place Your Order</h1>
-<p>The following products are in this order:</p>
+<h1>Ingrese su orden</h1>
+<p>Los siguientes productos estan en esta orden:</p>
 <table>
   <tr>
-    <th>Product</th>
-    <th>Price</th>
-    <th>Amount</th>
-    <th>Cost</th>
+    <th>Producto</th>
+    <th>Precio</th>
+    <th>Cantidad</th>
+    <th>Costo</th>
   </tr>
   <% @order.line_items.each do |ln| %>
     <tr>
@@ -22,9 +22,46 @@
 </table>
 
 <%= form_for @order do |f| %>
-  <%= f.label :address %><br/>
-  <%= f.text_area :address, :rows => 3 %>
+
+  <fieldset>
+    <legend>Su informacion</legend>
+      <ol>
+        <li>
+          <label for=name>Nombre</label>
+          <input id=name name=name type=text placeholder="First and last name" required autofocus>
+        </li>
+        <li>
+          <label for=direccion>Dirección</label>
+          <input id=name name=name type=text placeholder="" required autofocus>
+        </li>
+      </ol>
+    </fieldset>
+
+    <fieldset>
+      <legend>Tipo de tarjeta</legend>
+      <ol>
+        <li>
+          <input id=visa name=cardtype type=radio>
+          <label for=visa>VISA</label>
+        </li>
+        <li>
+          <input id=amex name=cardtype type=radio>
+          <label for=amex>AmEx</label>
+        </li>
+        <li>
+          <input id=mastercard name=cardtype type=radio>
+          <label for=mastercard>Mastercard</label>
+        </li>
+        <li>
+          <label for=numero>Número de tarjeta:</label>
+          <input id=name name=name type=text placeholder="" required autofocus>
+        </li>
+      </ol>
+    </fieldset>
+
   <p>
-    <%= f.submit "Place Order" %>
+
+  <input type="button" value="Realizar compra" onclick="window.location.href='/compra_exitosa/index'">
+
   </p>
 <% end %>
