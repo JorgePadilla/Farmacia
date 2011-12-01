@@ -18,13 +18,13 @@
         	
             <div class="top_menu">
             <a href="#" class="login">login</a>
-            <a href="#" class="sign_up">signup</a>
+            <a href="/signup" class="sign_up">signup</a>
             </div>
         
             <div id="menu">
                 <ul>                                              
 		    <li><a title="">Inicio</a></li>
-                    <li><a href="#" title="">Acerca de</a></li>
+                    <li><a href="/aboutus/index" title="">Acerca de</a></li>
                     <li><a href="/promociones/index" title="">Promoción</a></li>
                     <li><a href="#" title="">Contactenos</a></li>
                 </ul>
@@ -37,6 +37,15 @@
     
     <div id="middle_box">
     	<div class="middle_box_content"></div>
+
+    
+
+            <div class="pattern_content">
+            <h2><span class="dark_blue">Misión</span></h2><br/><br/>
+            <p class="pat">
+Somos una farmacia online dedicada a satisfacer las necesidades de nuestros clientes nacionales, innovando productos farmacéuticos con precios y ofertas accesibles para todos, con un excelente servicio, enfocada a facilitarle la vida, desde la comodidad de su casa o donde se encuentre.
+            </p>
+            </div>
     </div>
     
     
@@ -45,9 +54,9 @@
     	<div class="pattern_box">
             <div class="pattern_box_icon"><img src="/images/icon1.png" alt="" title="" width="70" height="112" /></div>
             <div class="pattern_content">
-            <h1>My <span class="blue">Medicine</span></h1>
+            <h1>Nuestra <span class="blue">Vision</span></h1>
             <p class="pat">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Ser una empresa ágil y en constante innovación y desarrollo, orientada a la excelencia, apoyada por la alta calidad de su producto, que le permite mantener el liderazgo y el reconocimiento de una empresa sólida en todo ambito. 
             </p>
             </div>
         </div>
@@ -56,9 +65,9 @@
     	<div class="pattern_box">
             <div class="pattern_box_icon"><img src="/images/icon2.png" alt="" title="" width="70" height="112" /></div>
             <div class="pattern_content">
-            <h1>Search <span class="blue"> Treatments</span></h1>
+            <h1><span class="blue"> Honestidad</span></h1>
             <p class="pat">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Es una de las principales cualidades que nos caracterizan de otras empresas online y en ellas están integradas la verdad, honradez y rectitud hacia nuestros clientes, cumpliendo con lo pactado.
             </p>
             </div>
         </div>        
@@ -71,23 +80,23 @@
  			<div class="box_content">
 					<div class="box_title">
                     	<div class="title_icon"><img src="/images/mini_icon1.gif" alt="" title="" /></div>
-                        <h2>My <span class="dark_blue">Events</span></h2>
+                        <h2>La <span class="dark_blue">Responsabilidad</span></h2>
                     </div>
                     
                     <div class="box_text_content">
                     	<img src="/images/calendar.gif" alt="" title="" class="box_icon" />
                         <div class="box_text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Este valor es fundamental para nosotros ya que gracias a él, estamos comprometidos con nuestros clientes asumiendo las consecuencias que se presenten ante cualquier circunstancia pérdida, robo o extravió del producto requerido.
                         </div>
-                        <a href="#" class="details">+ details</a>
+                        
                     </div>
 
                     <div class="box_text_content">
                     	<img src="/images/calendar.gif" alt="" title="" class="box_icon" />
                         <div class="box_text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+ Algo que nos caracteriza es la fidelidad que tenemos hacia la empresa y a nuestros clientes, dejándoles ver que los productos vendidos son duraderos y de confiar.
                         </div>
-                        <a href="#" class="details">+ details</a>
+     
                     </div>
 	
             </div>
@@ -96,23 +105,23 @@
  			<div class="box_content">
 					<div class="box_title">
                     	<div class="title_icon"><img src="/images/mini_icon2.gif" alt="" title="" /></div>
-                        <h2>My <span class="dark_blue"> Goals</span></h2>
+                        <h2>La <span class="dark_blue"> Confianza</span></h2>
                     </div>
                     
                     <div class="box_text_content">
                     	<img src="images/checked.gif" alt="" title="" class="box_icon" />
                         <div class="box_text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Este valor nos identifica como una empresa dedicada a brindar credibilidad y esperanza en nuestros clientes, ya que somos una herramienta a la mano y de fácil uso.
                         </div>
-                        <a href="#" class="details">+ details</a>
+
                     </div>
 
                     <div class="box_text_content">
                     	<img src="/images/checked.gif" alt="" title="" class="box_icon" />
                         <div class="box_text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Aceptaremos todo tipo de opiniones de cada integrante que conforma nuestra red de usuarios y clientes, así como su apreciación y valoración hacia nuestros productos mediante los comentarios en el Foro.
                         </div>
-                        <a href="#" class="details">+ details</a>
+
                     </div>
 	
             </div>            
@@ -121,15 +130,14 @@
   			<div class="box_content">
 					<div class="box_title">
                     	<div class="title_icon"><img src="/images/mini_icon3.gif" alt="" title="" /></div>
-                        <h2>My <span class="dark_blue">Sleep</span></h2>
+                        <h2>El <span class="dark_blue">Compromiso:</span></h2>
                     </div>
                     
                     <div class="box_text_content">
                     	<img src="images/checked.gif" alt="" title="" class="box_icon" />
                         <div class="box_text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			Como una empresa estamos comprometidos a ser eficientes y eficaces para que nuestro cliente reciba su producto a tiempo, tal como él lo pidió y bajo todos los estándares de seguridad y calidad.
                         </div>
-                        <a href="#" class="details">+ details</a>
                     </div>
 
                     <div class="box_text_content">
