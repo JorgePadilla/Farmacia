@@ -97,6 +97,7 @@
   </tr>
 </table> 
 
+  <input type="button" value="Ver orden" onclick="window.location.href='/orders/new'">
 
 <% if logged_in? && current_user.cart.present? && current_user.cart.line_items.present? %>
   <%= render :partial => "carts/details", :locals => { :cart => current_user.cart } %>
