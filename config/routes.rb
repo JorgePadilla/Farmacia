@@ -12,6 +12,8 @@ AuthSample::Application.routes.draw do
 
   get "orders/show"
 
+  get "description/index"
+
   get "/signup" => 'users#new', :as => :signup
   get "/login" => "user_sessions#new", :as => :login
   resources :user_sessions

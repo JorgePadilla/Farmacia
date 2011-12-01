@@ -249,3 +249,670 @@ Served asset /application.js - 304 Not Modified (5ms)
 
 Started GET "/assets/iecss.css" for 127.0.0.1 at 2011-12-01 14:17:18 -0600
 Served asset /iecss.css - 304 Not Modified (2ms)
+
+
+Started GET "/aboutus/index" for 127.0.0.1 at 2011-12-01 14:24:48 -0600
+  Processing by AboutusController#index as HTML
+Rendered aboutus/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 22ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 14:24:49 -0600
+Served asset /application.css - 304 Not Modified (28ms)
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2011-12-01 14:24:49 -0600
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/iecss.css" for 127.0.0.1 at 2011-12-01 14:24:49 -0600
+Served asset /iecss.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 14:24:49 -0600
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/aboutus/style.css" for 127.0.0.1 at 2011-12-01 14:24:49 -0600
+
+ActionController::RoutingError (No route matches [GET] "/aboutus/style.css"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.4ms)
+
+
+Started GET "/aboutus/style.css" for 127.0.0.1 at 2011-12-01 14:24:49 -0600
+
+ActionController::RoutingError (No route matches [GET] "/aboutus/style.css"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.3ms)
+
+
+Started GET "/aboutus/images/checked.gif" for 127.0.0.1 at 2011-12-01 14:24:49 -0600
+
+ActionController::RoutingError (No route matches [GET] "/aboutus/images/checked.gif"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.2ms)
+
+
+Started GET "/assets/images/menu_bt.gif" for 127.0.0.1 at 2011-12-01 14:24:49 -0600
+Served asset /images/menu_bt.gif - 404 Not Found (15ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/menu_bt.gif"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-01 14:27:57 -0600
+  Processing by ProductsController#index as HTML
+ERROR: compiling _app_views_products_index_html_erb___4323726314730014994_23669380 RAISED /home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:3: syntax error, unexpected tIDENTIFIER, expecting ')'
+<%= render :partial => "shared/login");@output_buffer.safe_concat('
+                              ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:3: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+<%= render :partial => "shared/login");@output_buffer.safe_concat('
+                                     ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:5: syntax error, unexpected tINTEGER, expecting ')'
+<table border="0" align="center" cellspacing="150">
+                ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:5: syntax error, unexpected tIDENTIFIER, expecting ')'
+<table border="0" align="center" cellspacing="150">
+                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:5: syntax error, unexpected tINTEGER, expecting ')'
+<table border="0" align="center" cellspacing="150">
+                                                 ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+    <td align="center">
+                     ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:13: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append= ( link_to "Add to Cart", carts_path(:produc...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:13: syntax error, unexpected tIDENTIFIER, expecting ')'
+...> product.id), :method => "post", :confirm => "Are you sure?...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:13: syntax error, unexpected tCONSTANT, expecting ')'
+...hod => "post", :confirm => "Are you sure?", :remote => true ...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:17: syntax error, unexpected tIDENTIFIER, expecting ')'
+    <td align="center">
+                     ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:23: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append= ( link_to "Add to Cart", carts_path(:produc...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:23: syntax error, unexpected tIDENTIFIER, expecting ')'
+...> product.id), :method => "post", :confirm => "Are you sure?...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:23: syntax error, unexpected tCONSTANT, expecting ')'
+...hod => "post", :confirm => "Are you sure?", :remote => true ...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:26: syntax error, unexpected tIDENTIFIER, expecting ')'
+    <td align="center">
+                     ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:32: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append= ( link_to "Add to Cart", carts_path(:produc...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:32: syntax error, unexpected tIDENTIFIER, expecting ')'
+...> product.id), :method => "post", :confirm => "Are you sure?...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:32: syntax error, unexpected tCONSTANT, expecting ')'
+...hod => "post", :confirm => "Are you sure?", :remote => true ...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:37: syntax error, unexpected tIDENTIFIER, expecting ')'
+    <td align="center">
+                     ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:43: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append= ( link_to "Add to Cart", carts_path(:produc...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:43: syntax error, unexpected tIDENTIFIER, expecting ')'
+...> product.id), :method => "post", :confirm => "Are you sure?...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:43: syntax error, unexpected tCONSTANT, expecting ')'
+...hod => "post", :confirm => "Are you sure?", :remote => true ...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:47: syntax error, unexpected tIDENTIFIER, expecting ')'
+    <td align="center">
+                     ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:53: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append= ( link_to "Add to Cart", carts_path(:produc...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:53: syntax error, unexpected tIDENTIFIER, expecting ')'
+...> product.id), :method => "post", :confirm => "Are you sure?...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:53: syntax error, unexpected tCONSTANT, expecting ')'
+...hod => "post", :confirm => "Are you sure?", :remote => true ...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:57: syntax error, unexpected tIDENTIFIER, expecting ')'
+    <td align="center">
+                     ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:63: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append= ( link_to "Add to Cart", carts_path(:produc...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:63: syntax error, unexpected tIDENTIFIER, expecting ')'
+...> product.id), :method => "post", :confirm => "Are you sure?...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:63: syntax error, unexpected tCONSTANT, expecting ')'
+...hod => "post", :confirm => "Are you sure?", :remote => true ...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:68: syntax error, unexpected tIDENTIFIER, expecting ')'
+    <td align="center">
+                     ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:74: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append= ( link_to "Add to Cart", carts_path(:produc...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:74: syntax error, unexpected tIDENTIFIER, expecting ')'
+...> product.id), :method => "post", :confirm => "Are you sure?...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:74: syntax error, unexpected tCONSTANT, expecting ')'
+...hod => "post", :confirm => "Are you sure?", :remote => true ...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:78: syntax error, unexpected tIDENTIFIER, expecting ')'
+    <td align="center">
+                     ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:84: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append= ( link_to "Add to Cart", carts_path(:produc...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:84: syntax error, unexpected tIDENTIFIER, expecting ')'
+...> product.id), :method => "post", :confirm => "Are you sure?...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:84: syntax error, unexpected tCONSTANT, expecting ')'
+...hod => "post", :confirm => "Are you sure?", :remote => true ...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:88: syntax error, unexpected tIDENTIFIER, expecting ')'
+    <td align="center">
+                     ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:94: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append= ( link_to "Add to Cart", carts_path(:produc...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:94: syntax error, unexpected tIDENTIFIER, expecting ')'
+...> product.id), :method => "post", :confirm => "Are you sure?...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:94: syntax error, unexpected tCONSTANT, expecting ')'
+...hod => "post", :confirm => "Are you sure?", :remote => true ...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:102: syntax error, unexpected tIDENTIFIER, expecting ')'
+...nd= ( render :partial => "carts/details", :locals => { :cart...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:102: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...der :partial => "carts/details", :locals => { :cart => curre...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:102: unterminated string meets end of file
+Function body:           def _app_views_products_index_html_erb___4323726314730014994_23669380(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "products/index";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.append= (puts "<p>hollas</p>
+
+<%= render :partial => "shared/login");@output_buffer.safe_concat('
+');@output_buffer.safe_concat('
+<table border="0" align="center" cellspacing="150">
+  <tr>
+    <td align="center">
+');      product=@products.all[0]
+@output_buffer.safe_concat('      <h2>');@output_buffer.append= ( link_to product.name, product );@output_buffer.safe_concat('</h2>
+      <p><img src="');@output_buffer.append= (getImagen product.id);@output_buffer.safe_concat('"/></p>
+      <p>');@output_buffer.append= ( number_to_currency(product.price) );@output_buffer.safe_concat('</p>
+');       if logged_in? 
+@output_buffer.safe_concat('      <p>');@output_buffer.append= ( link_to "Add to Cart", carts_path(:product_id => product.id), :method => "post", :confirm => "Are you sure?", :remote => true );@output_buffer.safe_concat('</p>
+');       end 
+@output_buffer.safe_concat('    </td>
+
+    <td align="center">
+');      product=@products.all[1]
+@output_buffer.safe_concat('      <h2>');@output_buffer.append= ( link_to product.name, product );@output_buffer.safe_concat('</h2>
+      <p><img src="');@output_buffer.append= (getImagen product.id);@output_buffer.safe_concat('"/></p>
+      <p>');@output_buffer.append= ( number_to_currency(product.price) );@output_buffer.safe_concat('</p>
+');       if logged_in? 
+@output_buffer.safe_concat('      <p>');@output_buffer.append= ( link_to "Add to Cart", carts_path(:product_id => product.id), :method => "post", :confirm => "Are you sure?", :remote => true );@output_buffer.safe_concat('</p>
+');       end 
+@output_buffer.safe_concat('
+    <td align="center">
+');      product=@products.all[2]
+@output_buffer.safe_concat('      <h2>');@output_buffer.append= ( link_to product.name, product );@output_buffer.safe_concat('</h2>
+      <p><img src="');@output_buffer.append= (getImagen product.id);@output_buffer.safe_concat('"/></p>
+      <p>');@output_buffer.append= ( number_to_currency(product.price) );@output_buffer.safe_concat('</p>
+');       if logged_in? 
+@output_buffer.safe_concat('      <p>');@output_buffer.append= ( link_to "Add to Cart", carts_path(:product_id => product.id), :method => "post", :confirm => "Are you sure?", :remote => true );@output_buffer.safe_concat('</p>
+');       end 
+@output_buffer.safe_concat('    </td>
+  </tr>
+  <tr>
+    <td align="center">
+');      product=@products.all[3]
+@output_buffer.safe_concat('      <h2>');@output_buffer.append= ( link_to product.name, product );@output_buffer.safe_concat('</h2>
+      <p><img src="');@output_buffer.append= (getImagen product.id);@output_buffer.safe_concat('"/></p>
+      <p>');@output_buffer.append= ( number_to_currency(product.price) );@output_buffer.safe_concat('</p>
+');       if logged_in? 
+@output_buffer.safe_concat('      <p>');@output_buffer.append= ( link_to "Add to Cart", carts_path(:product_id => product.id), :method => "post", :confirm => "Are you sure?", :remote => true );@output_buffer.safe_concat('</p>
+');       end 
+@output_buffer.safe_concat('    </td>
+
+    <td align="center">
+');      product=@products.all[4]
+@output_buffer.safe_concat('      <h2>');@output_buffer.append= ( link_to product.name, product );@output_buffer.safe_concat('</h2>
+      <p><img src="');@output_buffer.append= (getImagen product.id);@output_buffer.safe_concat('"/></p>
+      <p>');@output_buffer.append= ( number_to_currency(product.price) );@output_buffer.safe_concat('</p>
+');       if logged_in? 
+@output_buffer.safe_concat('      <p>');@output_buffer.append= ( link_to "Add to Cart", carts_path(:product_id => product.id), :method => "post", :confirm => "Are you sure?", :remote => true );@output_buffer.safe_concat('</p>
+');       end 
+@output_buffer.safe_concat('    </td>
+
+    <td align="center">
+');      product=@products.all[5]
+@output_buffer.safe_concat('      <h2>');@output_buffer.append= ( link_to product.name, product );@output_buffer.safe_concat('</h2>
+      <p><img src="');@output_buffer.append= (getImagen product.id);@output_buffer.safe_concat('"/></p>
+      <p>');@output_buffer.append= ( number_to_currency(product.price) );@output_buffer.safe_concat('</p>
+');       if logged_in? 
+@output_buffer.safe_concat('      <p>');@output_buffer.append= ( link_to "Add to Cart", carts_path(:product_id => product.id), :method => "post", :confirm => "Are you sure?", :remote => true );@output_buffer.safe_concat('</p>
+');       end 
+@output_buffer.safe_concat('    </td>
+  </tr>
+  <tr>
+    <td align="center">
+');      product=@products.all[6]
+@output_buffer.safe_concat('      <h2>');@output_buffer.append= ( link_to product.name, product );@output_buffer.safe_concat('</h2>
+      <p><img src="');@output_buffer.append= (getImagen product.id);@output_buffer.safe_concat('"/></p>
+      <p>');@output_buffer.append= ( number_to_currency(product.price) );@output_buffer.safe_concat('</p>
+');       if logged_in? 
+@output_buffer.safe_concat('      <p>');@output_buffer.append= ( link_to "Add to Cart", carts_path(:product_id => product.id), :method => "post", :confirm => "Are you sure?", :remote => true );@output_buffer.safe_concat('</p>
+');       end 
+@output_buffer.safe_concat('    </td>
+
+    <td align="center">
+');      product=@products.all[7]
+@output_buffer.safe_concat('      <h2>');@output_buffer.append= ( link_to product.name, product );@output_buffer.safe_concat('</h2>
+      <p><img src="');@output_buffer.append= (getImagen product.id);@output_buffer.safe_concat('"/></p>
+      <p>');@output_buffer.append= ( number_to_currency(product.price) );@output_buffer.safe_concat('</p>
+');       if logged_in? 
+@output_buffer.safe_concat('      <p>');@output_buffer.append= ( link_to "Add to Cart", carts_path(:product_id => product.id), :method => "post", :confirm => "Are you sure?", :remote => true );@output_buffer.safe_concat('</p>
+');       end 
+@output_buffer.safe_concat('    </td>
+
+    <td align="center">
+');      product=@products.all[8]
+@output_buffer.safe_concat('      <h2>');@output_buffer.append= ( link_to product.name, product );@output_buffer.safe_concat('</h2>
+      <p><img src="');@output_buffer.append= (getImagen product.id);@output_buffer.safe_concat('"/></p>
+      <p>');@output_buffer.append= ( number_to_currency(product.price) );@output_buffer.safe_concat('</p>
+');       if logged_in? 
+@output_buffer.safe_concat('      <p>');@output_buffer.append= ( link_to "Add to Cart", carts_path(:product_id => product.id), :method => "post", :confirm => "Are you sure?", :remote => true );@output_buffer.safe_concat('</p>
+');       end 
+@output_buffer.safe_concat('    </td>
+  </tr>
+</table> 
+
+
+'); if logged_in? && current_user.cart.present? && current_user.cart.line_items.present? 
+@output_buffer.safe_concat('  ');@output_buffer.append= ( render :partial => "carts/details", :locals => { :cart => current_user.cart } );@output_buffer.safe_concat('
+'); end 
+@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_view/template.rb:282:in `module_eval'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_view/template.rb:282:in `compile'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_view/template.rb:190:in `compile!'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_view/template.rb:143:in `block in render'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.1.0/lib/active_support/notifications.rb:55:in `instrument'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_view/template.rb:142:in `render'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:40:in `block (2 levels) in render_template'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_view/renderer/abstract_renderer.rb:33:in `block in instrument'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.1.0/lib/active_support/notifications.rb:53:in `block in instrument'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.1.0/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.1.0/lib/active_support/notifications.rb:53:in `instrument'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_view/renderer/abstract_renderer.rb:33:in `instrument'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:39:in `block in render_template'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:47:in `render_with_layout'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:38:in `render_template'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:12:in `block in render'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_view/renderer/abstract_renderer.rb:22:in `wrap_formats'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_view/renderer/template_renderer.rb:9:in `render'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_view/renderer/renderer.rb:36:in `render_template'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_view/renderer/renderer.rb:17:in `render'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/abstract_controller/rendering.rb:120:in `_render_template'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_controller/metal/streaming.rb:250:in `_render_template'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/abstract_controller/rendering.rb:114:in `render_to_body'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_controller/metal/renderers.rb:30:in `render_to_body'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_controller/metal/compatibility.rb:43:in `render_to_body'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/abstract_controller/rendering.rb:99:in `render'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_controller/metal/rendering.rb:16:in `render'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.1.0/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+/home/userr/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/benchmark.rb:310:in `realtime'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.1.0/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/activerecord-3.1.0/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/abstract_controller/base.rb:167:in `process_action'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:416:in `_run__2680729992812124858__process_action__263938144538544739__callbacks'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:386:in `_run_process_action_callbacks'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.1.0/lib/active_support/notifications.rb:53:in `block in instrument'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.1.0/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.1.0/lib/active_support/notifications.rb:53:in `instrument'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_controller/metal/params_wrapper.rb:201:in `process_action'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/activerecord-3.1.0/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/abstract_controller/base.rb:121:in `process'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/abstract_controller/rendering.rb:45:in `process'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_controller/metal.rb:193:in `dispatch'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_controller/metal.rb:236:in `block in action'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/routing/route_set.rb:65:in `call'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/routing/route_set.rb:65:in `dispatch'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/routing/route_set.rb:29:in `call'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:152:in `block in call'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:96:in `block in recognize'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:75:in `optimized_each'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/rack-mount-0.8.3/lib/rack/mount/code_generation.rb:95:in `recognize'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/rack-mount-0.8.3/lib/rack/mount/route_set.rb:141:in `call'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/routing/route_set.rb:531:in `call'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.3.2/lib/rack/etag.rb:23:in `call'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.3.2/lib/rack/conditionalget.rb:25:in `call'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/head.rb:14:in `call'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/flash.rb:243:in `call'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.3.2/lib/rack/session/abstract/id.rb:195:in `context'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.3.2/lib/rack/session/abstract/id.rb:190:in `call'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/cookies.rb:326:in `call'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/activerecord-3.1.0/lib/active_record/query_cache.rb:62:in `call'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/activerecord-3.1.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:477:in `call'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:392:in `_run_call_callbacks'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.1.0/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/reloader.rb:68:in `call'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.3.2/lib/rack/sendfile.rb:101:in `call'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/show_exceptions.rb:47:in `call'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/railties-3.1.0/lib/rails/rack/logger.rb:13:in `call'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.3.2/lib/rack/methodoverride.rb:24:in `call'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.3.2/lib/rack/runtime.rb:17:in `call'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/activesupport-3.1.0/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.3.2/lib/rack/lock.rb:15:in `call'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/static.rb:53:in `call'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/railties-3.1.0/lib/rails/engine.rb:455:in `call'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/railties-3.1.0/lib/rails/rack/content_length.rb:16:in `call'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/railties-3.1.0/lib/rails/rack/log_tailer.rb:14:in `call'
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/rack-1.3.2/lib/rack/handler/webrick.rb:59:in `service'
+/home/userr/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/home/userr/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/home/userr/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+Rendered products/index.html.erb within layouts/application (10.9ms)
+Completed 500 Internal Server Error in 106ms
+
+ActionView::Template::Error (/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:3: syntax error, unexpected tIDENTIFIER, expecting ')'
+<%= render :partial => "shared/login");@output_buffer.safe_concat('
+                              ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:3: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+<%= render :partial => "shared/login");@output_buffer.safe_concat('
+                                     ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:5: syntax error, unexpected tINTEGER, expecting ')'
+<table border="0" align="center" cellspacing="150">
+                ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:5: syntax error, unexpected tIDENTIFIER, expecting ')'
+<table border="0" align="center" cellspacing="150">
+                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:5: syntax error, unexpected tINTEGER, expecting ')'
+<table border="0" align="center" cellspacing="150">
+                                                 ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+    <td align="center">
+                     ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:13: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append= ( link_to "Add to Cart", carts_path(:produc...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:13: syntax error, unexpected tIDENTIFIER, expecting ')'
+...> product.id), :method => "post", :confirm => "Are you sure?...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:13: syntax error, unexpected tCONSTANT, expecting ')'
+...hod => "post", :confirm => "Are you sure?", :remote => true ...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:17: syntax error, unexpected tIDENTIFIER, expecting ')'
+    <td align="center">
+                     ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:23: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append= ( link_to "Add to Cart", carts_path(:produc...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:23: syntax error, unexpected tIDENTIFIER, expecting ')'
+...> product.id), :method => "post", :confirm => "Are you sure?...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:23: syntax error, unexpected tCONSTANT, expecting ')'
+...hod => "post", :confirm => "Are you sure?", :remote => true ...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:26: syntax error, unexpected tIDENTIFIER, expecting ')'
+    <td align="center">
+                     ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:32: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append= ( link_to "Add to Cart", carts_path(:produc...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:32: syntax error, unexpected tIDENTIFIER, expecting ')'
+...> product.id), :method => "post", :confirm => "Are you sure?...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:32: syntax error, unexpected tCONSTANT, expecting ')'
+...hod => "post", :confirm => "Are you sure?", :remote => true ...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:37: syntax error, unexpected tIDENTIFIER, expecting ')'
+    <td align="center">
+                     ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:43: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append= ( link_to "Add to Cart", carts_path(:produc...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:43: syntax error, unexpected tIDENTIFIER, expecting ')'
+...> product.id), :method => "post", :confirm => "Are you sure?...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:43: syntax error, unexpected tCONSTANT, expecting ')'
+...hod => "post", :confirm => "Are you sure?", :remote => true ...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:47: syntax error, unexpected tIDENTIFIER, expecting ')'
+    <td align="center">
+                     ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:53: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append= ( link_to "Add to Cart", carts_path(:produc...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:53: syntax error, unexpected tIDENTIFIER, expecting ')'
+...> product.id), :method => "post", :confirm => "Are you sure?...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:53: syntax error, unexpected tCONSTANT, expecting ')'
+...hod => "post", :confirm => "Are you sure?", :remote => true ...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:57: syntax error, unexpected tIDENTIFIER, expecting ')'
+    <td align="center">
+                     ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:63: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append= ( link_to "Add to Cart", carts_path(:produc...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:63: syntax error, unexpected tIDENTIFIER, expecting ')'
+...> product.id), :method => "post", :confirm => "Are you sure?...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:63: syntax error, unexpected tCONSTANT, expecting ')'
+...hod => "post", :confirm => "Are you sure?", :remote => true ...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:68: syntax error, unexpected tIDENTIFIER, expecting ')'
+    <td align="center">
+                     ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:74: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append= ( link_to "Add to Cart", carts_path(:produc...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:74: syntax error, unexpected tIDENTIFIER, expecting ')'
+...> product.id), :method => "post", :confirm => "Are you sure?...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:74: syntax error, unexpected tCONSTANT, expecting ')'
+...hod => "post", :confirm => "Are you sure?", :remote => true ...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:78: syntax error, unexpected tIDENTIFIER, expecting ')'
+    <td align="center">
+                     ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:84: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append= ( link_to "Add to Cart", carts_path(:produc...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:84: syntax error, unexpected tIDENTIFIER, expecting ')'
+...> product.id), :method => "post", :confirm => "Are you sure?...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:84: syntax error, unexpected tCONSTANT, expecting ')'
+...hod => "post", :confirm => "Are you sure?", :remote => true ...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:88: syntax error, unexpected tIDENTIFIER, expecting ')'
+    <td align="center">
+                     ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:94: syntax error, unexpected tCONSTANT, expecting ')'
+...t_buffer.append= ( link_to "Add to Cart", carts_path(:produc...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:94: syntax error, unexpected tIDENTIFIER, expecting ')'
+...> product.id), :method => "post", :confirm => "Are you sure?...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:94: syntax error, unexpected tCONSTANT, expecting ')'
+...hod => "post", :confirm => "Are you sure?", :remote => true ...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:102: syntax error, unexpected tIDENTIFIER, expecting ')'
+...nd= ( render :partial => "carts/details", :locals => { :cart...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:102: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...der :partial => "carts/details", :locals => { :cart => curre...
+...                               ^
+/home/userr/ProyectosActuales/farmacia/app/views/products/index.html.erb:102: unterminated string meets end of file):
+    1: <%=puts "<p>hollas</p>
+    2: 
+    3: <%= render :partial => "shared/login"%>
+    4: 
+    5: <table border="0" align="center" cellspacing="150">
+    6:   <tr>
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.0ms)
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.9ms)
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (19.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-01 14:28:14 -0600
+  Processing by ProductsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+Rendered shared/_login.html.erb (70.2ms)
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY released_at desc[0m
+  [1m[35mCart Load (0.7ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."user_id" = 3 LIMIT 1
+Rendered products/index.html.erb within layouts/application (313.5ms)
+Completed 200 OK in 334ms (Views: 327.1ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 14:28:15 -0600
+Served asset /application.css - 304 Not Modified (42ms)
+
+
+Started GET "/assets/iecss.css" for 127.0.0.1 at 2011-12-01 14:28:15 -0600
+Served asset /iecss.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 14:28:15 -0600
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2011-12-01 14:28:15 -0600
+Served asset /style.css - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-01 14:28:44 -0600
+  Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+Rendered shared/_login.html.erb (158.8ms)
+  [1m[35mProduct Load (0.8ms)[0m  SELECT "products".* FROM "products" ORDER BY released_at desc
+  [1m[36mCart Load (0.5ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = 3 LIMIT 1[0m
+Rendered products/index.html.erb within layouts/application (309.4ms)
+Completed 200 OK in 330ms (Views: 323.2ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 14:28:44 -0600
+Served asset /application.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/iecss.css" for 127.0.0.1 at 2011-12-01 14:28:44 -0600
+Served asset /iecss.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2011-12-01 14:28:44 -0600
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 14:28:44 -0600
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-01 14:29:23 -0600
+  Processing by ProductsController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+Rendered shared/_login.html.erb (70.3ms)
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY released_at desc[0m
+  [1m[35mCart Load (0.5ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."user_id" = 3 LIMIT 1
+Rendered products/index.html.erb within layouts/application (281.1ms)
+Completed 200 OK in 307ms (Views: 299.6ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 14:29:23 -0600
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2011-12-01 14:29:23 -0600
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/iecss.css" for 127.0.0.1 at 2011-12-01 14:29:23 -0600
+Served asset /iecss.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 14:29:23 -0600
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-01 14:29:40 -0600
+  Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+Rendered shared/_login.html.erb (152.2ms)
+  [1m[35mProduct Load (1.2ms)[0m  SELECT "products".* FROM "products" ORDER BY released_at desc
+  [1m[36mCart Load (0.5ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = 3 LIMIT 1[0m
+Rendered products/index.html.erb within layouts/application (307.9ms)
+Completed 200 OK in 329ms (Views: 321.2ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 14:29:41 -0600
+Served asset /application.css - 304 Not Modified (37ms)
+
+
+Started GET "/assets/iecss.css" for 127.0.0.1 at 2011-12-01 14:29:41 -0600
+Served asset /iecss.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2011-12-01 14:29:41 -0600
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 14:29:41 -0600
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/desctiption/index" for 127.0.0.1 at 2011-12-01 14:42:22 -0600
+
+ActionController::RoutingError (No route matches [GET] "/desctiption/index"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.2ms)
+
+
+Started GET "/descrtiption/index" for 127.0.0.1 at 2011-12-01 14:42:29 -0600
+
+ActionController::RoutingError (No route matches [GET] "/descrtiption/index"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.3ms)
+
+
+Started GET "/description/index" for 127.0.0.1 at 2011-12-01 14:42:32 -0600
+
+ActionController::RoutingError (uninitialized constant DescriptionController):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.5ms)
