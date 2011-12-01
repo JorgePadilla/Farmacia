@@ -1,5 +1,9 @@
 AuthSample::Application.routes.draw do
 
+  get "promociones/index"
+
+  get "aboutus/index"
+
   get "home/index"
 
   get "orders/new"
