@@ -3822,3 +3822,975 @@ Served asset /style.css - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 15:51:48 -0600
 Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2011-12-01 15:53:33 -0600
+  Processing by OrdersController#new as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCart Load (0.5ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = 3 LIMIT 1[0m
+  [1m[35mLineItem Load (0.6ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 2
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = 2 LIMIT 1[0m
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = 3 LIMIT 1
+Rendered orders/new.html.erb within layouts/application (92.7ms)
+Completed 200 OK in 388ms (Views: 109.4ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 15:53:33 -0600
+Served asset /application.css - 304 Not Modified (43ms)
+
+
+Started GET "/assets/iecss.css" for 127.0.0.1 at 2011-12-01 15:53:33 -0600
+Served asset /iecss.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 15:53:33 -0600
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2011-12-01 15:53:33 -0600
+Served asset /style.css - 304 Not Modified (1ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2011-12-01 15:54:51 -0600
+  Processing by OrdersController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCart Load (0.5ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."user_id" = 3 LIMIT 1
+  [1m[36mLineItem Load (0.6ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 2[0m
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = 2 LIMIT 1
+  [1m[36mProduct Load (0.6ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = 3 LIMIT 1[0m
+Rendered orders/new.html.erb within layouts/application (95.4ms)
+Completed 200 OK in 392ms (Views: 113.3ms | ActiveRecord: 9.3ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 15:54:51 -0600
+Served asset /application.css - 304 Not Modified (42ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 15:54:51 -0600
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2011-12-01 15:54:51 -0600
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/iecss.css" for 127.0.0.1 at 2011-12-01 15:54:51 -0600
+Served asset /iecss.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/images/menu_bt.gif" for 127.0.0.1 at 2011-12-01 15:54:52 -0600
+Served asset /images/menu_bt.gif - 404 Not Found (14ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/menu_bt.gif"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.3ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2011-12-01 15:55:44 -0600
+  Processing by OrdersController#new as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCart Load (0.5ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = 3 LIMIT 1[0m
+  [1m[35mLineItem Load (0.6ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 2
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = 2 LIMIT 1[0m
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = 3 LIMIT 1
+Rendered orders/new.html.erb within layouts/application (179.8ms)
+Completed 200 OK in 400ms (Views: 198.4ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 15:55:45 -0600
+Served asset /application.css - 304 Not Modified (26ms)
+
+
+Started GET "/assets/iecss.css" for 127.0.0.1 at 2011-12-01 15:55:45 -0600
+Served asset /iecss.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2011-12-01 15:55:45 -0600
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 15:55:45 -0600
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/images/menu_bt.gif" for 127.0.0.1 at 2011-12-01 15:55:45 -0600
+Served asset /images/menu_bt.gif - 404 Not Found (16ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/menu_bt.gif"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.5ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at 2011-12-01 15:57:27 -0600
+  Processing by OrdersController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCart Load (0.5ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."user_id" = 3 LIMIT 1
+  [1m[36mLineItem Load (0.6ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 2[0m
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = 2 LIMIT 1
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = 3 LIMIT 1[0m
+Rendered orders/new.html.erb within layouts/application (99.7ms)
+Completed 200 OK in 417ms (Views: 118.5ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 15:57:28 -0600
+Served asset /application.css - 304 Not Modified (47ms)
+
+
+Started GET "/assets/iecss.css" for 127.0.0.1 at 2011-12-01 15:57:28 -0600
+Served asset /iecss.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2011-12-01 15:57:28 -0600
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 15:57:28 -0600
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/images/menu_bt.gif" for 127.0.0.1 at 2011-12-01 15:57:28 -0600
+Served asset /images/menu_bt.gif - 404 Not Found (15ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/menu_bt.gif"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.7ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2011-12-01 15:57:34 -0600
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 23ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 15:57:35 -0600
+Served asset /application.css - 304 Not Modified (42ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 15:57:35 -0600
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/iecss.css" for 127.0.0.1 at 2011-12-01 15:57:35 -0600
+Served asset /iecss.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2011-12-01 15:57:35 -0600
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/home/style.css" for 127.0.0.1 at 2011-12-01 15:57:35 -0600
+
+ActionController::RoutingError (No route matches [GET] "/home/style.css"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.4ms)
+
+
+Started GET "/assets/images/menu_bt.gif" for 127.0.0.1 at 2011-12-01 15:57:35 -0600
+Served asset /images/menu_bt.gif - 404 Not Found (10ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/menu_bt.gif"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.2ms)
+
+
+Started GET "/home/style.css" for 127.0.0.1 at 2011-12-01 15:57:35 -0600
+
+ActionController::RoutingError (No route matches [GET] "/home/style.css"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.2ms)
+
+
+Started GET "/home/images/checked.gif" for 127.0.0.1 at 2011-12-01 15:57:35 -0600
+
+ActionController::RoutingError (No route matches [GET] "/home/images/checked.gif"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.5ms)
+
+
+Started GET "/home/index" for 127.0.0.1 at 2011-12-01 15:57:59 -0600
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 24ms (Views: 22.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 15:57:59 -0600
+Served asset /application.css - 304 Not Modified (42ms)
+
+
+Started GET "/assets/iecss.css" for 127.0.0.1 at 2011-12-01 15:57:59 -0600
+Served asset /iecss.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 15:57:59 -0600
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2011-12-01 15:57:59 -0600
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/home/style.css" for 127.0.0.1 at 2011-12-01 15:57:59 -0600
+
+ActionController::RoutingError (No route matches [GET] "/home/style.css"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.1ms)
+
+
+Started GET "/assets/images/menu_bt.gif" for 127.0.0.1 at 2011-12-01 15:58:00 -0600
+Served asset /images/menu_bt.gif - 404 Not Found (110ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/menu_bt.gif"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.3ms)
+
+
+Started GET "/home/style.css" for 127.0.0.1 at 2011-12-01 15:58:00 -0600
+
+ActionController::RoutingError (No route matches [GET] "/home/style.css"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.1ms)
+
+
+Started GET "/home/images/checked.gif" for 127.0.0.1 at 2011-12-01 15:58:00 -0600
+
+ActionController::RoutingError (No route matches [GET] "/home/images/checked.gif"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-01 15:58:09 -0600
+  Processing by ProductsController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+Rendered shared/_login.html.erb (71.6ms)
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY released_at desc[0m
+  [1m[35mCart Load (0.5ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."user_id" = 3 LIMIT 1
+  [1m[36mLineItem Load (0.6ms)[0m  [1mSELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 2[0m
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = 2 LIMIT 1
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = 3 LIMIT 1[0m
+Rendered carts/_details.html.erb (43.6ms)
+Rendered products/index.html.erb within layouts/application (400.4ms)
+Completed 200 OK in 420ms (Views: 409.9ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/assets/iecss.css" for 127.0.0.1 at 2011-12-01 15:58:10 -0600
+Served asset /iecss.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 15:58:10 -0600
+Served asset /application.css - 304 Not Modified (19ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 15:58:10 -0600
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2011-12-01 15:58:10 -0600
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/images/menu_bt.gif" for 127.0.0.1 at 2011-12-01 15:58:10 -0600
+Served asset /images/menu_bt.gif - 404 Not Found (11ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/menu_bt.gif"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.2ms)
+
+
+Started GET "/aboutus/index" for 127.0.0.1 at 2011-12-01 15:58:30 -0600
+  Processing by AboutusController#index as HTML
+Rendered aboutus/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 15:58:30 -0600
+Served asset /application.css - 304 Not Modified (43ms)
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2011-12-01 15:58:30 -0600
+Served asset /style.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/iecss.css" for 127.0.0.1 at 2011-12-01 15:58:30 -0600
+Served asset /iecss.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 15:58:30 -0600
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/aboutus/style.css" for 127.0.0.1 at 2011-12-01 15:58:30 -0600
+
+ActionController::RoutingError (No route matches [GET] "/aboutus/style.css"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.2ms)
+
+
+Started GET "/assets/images/menu_bt.gif" for 127.0.0.1 at 2011-12-01 15:58:30 -0600
+Served asset /images/menu_bt.gif - 404 Not Found (14ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/menu_bt.gif"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.2ms)
+
+
+Started GET "/aboutus/style.css" for 127.0.0.1 at 2011-12-01 15:58:30 -0600
+
+ActionController::RoutingError (No route matches [GET] "/aboutus/style.css"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.1ms)
+
+
+Started GET "/aboutus/index" for 127.0.0.1 at 2011-12-01 15:58:46 -0600
+  Processing by AboutusController#index as HTML
+Rendered aboutus/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 25ms (Views: 23.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 15:58:46 -0600
+Served asset /application.css - 304 Not Modified (55ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 15:58:46 -0600
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/aboutus/style.css" for 127.0.0.1 at 2011-12-01 15:58:46 -0600
+
+ActionController::RoutingError (No route matches [GET] "/aboutus/style.css"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.2ms)
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2011-12-01 15:58:46 -0600
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/iecss.css" for 127.0.0.1 at 2011-12-01 15:58:46 -0600
+Served asset /iecss.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/images/menu_bt.gif" for 127.0.0.1 at 2011-12-01 15:58:46 -0600
+Served asset /images/menu_bt.gif - 404 Not Found (11ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/menu_bt.gif"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (5.4ms)
+
+
+Started GET "/aboutus/style.css" for 127.0.0.1 at 2011-12-01 15:58:47 -0600
+
+ActionController::RoutingError (No route matches [GET] "/aboutus/style.css"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.2ms)
+
+
+Started GET "/promociones/index" for 127.0.0.1 at 2011-12-01 15:58:48 -0600
+  Processing by PromocionesController#index as HTML
+Rendered promociones/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 23ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 15:58:48 -0600
+Served asset /application.css - 304 Not Modified (50ms)
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2011-12-01 15:58:48 -0600
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/promociones/style.css" for 127.0.0.1 at 2011-12-01 15:58:48 -0600
+
+ActionController::RoutingError (No route matches [GET] "/promociones/style.css"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.2ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 15:58:48 -0600
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/iecss.css" for 127.0.0.1 at 2011-12-01 15:58:48 -0600
+Served asset /iecss.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/images/menu_bt.gif" for 127.0.0.1 at 2011-12-01 15:58:48 -0600
+Served asset /images/menu_bt.gif - 404 Not Found (9ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/menu_bt.gif"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (7.2ms)
+
+
+Started GET "/promociones/style.css" for 127.0.0.1 at 2011-12-01 15:58:48 -0600
+
+ActionController::RoutingError (No route matches [GET] "/promociones/style.css"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.3ms)
+
+
+Started GET "/promociones/images/checked.gif" for 127.0.0.1 at 2011-12-01 15:58:48 -0600
+
+ActionController::RoutingError (No route matches [GET] "/promociones/images/checked.gif"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.8ms)
+
+
+Started GET "/promociones/index" for 127.0.0.1 at 2011-12-01 15:58:49 -0600
+  Processing by PromocionesController#index as HTML
+Rendered promociones/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 15:58:50 -0600
+Served asset /application.css - 304 Not Modified (49ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 15:58:50 -0600
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2011-12-01 15:58:50 -0600
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/iecss.css" for 127.0.0.1 at 2011-12-01 15:58:50 -0600
+Served asset /iecss.css - 304 Not Modified (1ms)
+
+
+Started GET "/promociones/style.css" for 127.0.0.1 at 2011-12-01 15:58:50 -0600
+
+ActionController::RoutingError (No route matches [GET] "/promociones/style.css"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.3ms)
+
+
+Started GET "/assets/images/menu_bt.gif" for 127.0.0.1 at 2011-12-01 15:58:50 -0600
+Served asset /images/menu_bt.gif - 404 Not Found (10ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/menu_bt.gif"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.3ms)
+
+
+Started GET "/promociones/style.css" for 127.0.0.1 at 2011-12-01 15:58:50 -0600
+
+ActionController::RoutingError (No route matches [GET] "/promociones/style.css"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.5ms)
+
+
+Started GET "/promociones/images/checked.gif" for 127.0.0.1 at 2011-12-01 15:58:50 -0600
+
+ActionController::RoutingError (No route matches [GET] "/promociones/images/checked.gif"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.9ms)
+
+
+Started GET "/promociones/index" for 127.0.0.1 at 2011-12-01 15:59:11 -0600
+  Processing by PromocionesController#index as HTML
+Rendered promociones/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 26ms (Views: 23.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 15:59:11 -0600
+Served asset /application.css - 304 Not Modified (24ms)
+
+
+Started GET "/assets/iecss.css" for 127.0.0.1 at 2011-12-01 15:59:11 -0600
+Served asset /iecss.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 15:59:11 -0600
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/promociones/style.css" for 127.0.0.1 at 2011-12-01 15:59:11 -0600
+
+ActionController::RoutingError (No route matches [GET] "/promociones/style.css"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.3ms)
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2011-12-01 15:59:11 -0600
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/images/menu_bt.gif" for 127.0.0.1 at 2011-12-01 15:59:11 -0600
+Served asset /images/menu_bt.gif - 404 Not Found (41ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/menu_bt.gif"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.1ms)
+
+
+Started GET "/promociones/style.css" for 127.0.0.1 at 2011-12-01 15:59:11 -0600
+
+ActionController::RoutingError (No route matches [GET] "/promociones/style.css"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.5ms)
+
+
+Started GET "/promociones/images/checked.gif" for 127.0.0.1 at 2011-12-01 15:59:11 -0600
+
+ActionController::RoutingError (No route matches [GET] "/promociones/images/checked.gif"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.3ms)
+
+
+Started GET "/contactenos/index" for 127.0.0.1 at 2011-12-01 15:59:12 -0600
+  Processing by ContactenosController#index as HTML
+Rendered contactenos/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 22ms (Views: 20.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 15:59:12 -0600
+Served asset /application.css - 304 Not Modified (43ms)
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2011-12-01 15:59:13 -0600
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 15:59:13 -0600
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/iecss.css" for 127.0.0.1 at 2011-12-01 15:59:13 -0600
+Served asset /iecss.css - 304 Not Modified (1ms)
+
+
+Started GET "/contactenos/style.css" for 127.0.0.1 at 2011-12-01 15:59:13 -0600
+
+ActionController::RoutingError (No route matches [GET] "/contactenos/style.css"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.3ms)
+
+
+Started GET "/assets/images/menu_bt.gif" for 127.0.0.1 at 2011-12-01 15:59:13 -0600
+Served asset /images/menu_bt.gif - 404 Not Found (11ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/menu_bt.gif"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.4ms)
+
+
+Started GET "/contactenos/images/checked.gif" for 127.0.0.1 at 2011-12-01 15:59:13 -0600
+
+ActionController::RoutingError (No route matches [GET] "/contactenos/images/checked.gif"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.3ms)
+
+
+Started GET "/contactenos/style.css" for 127.0.0.1 at 2011-12-01 15:59:13 -0600
+
+ActionController::RoutingError (No route matches [GET] "/contactenos/style.css"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.3ms)
+
+
+Started GET "/contactenos/index" for 127.0.0.1 at 2011-12-01 15:59:25 -0600
+  Processing by ContactenosController#index as HTML
+Rendered contactenos/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 23ms (Views: 21.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 15:59:25 -0600
+Served asset /application.css - 304 Not Modified (46ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 15:59:25 -0600
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/iecss.css" for 127.0.0.1 at 2011-12-01 15:59:25 -0600
+Served asset /iecss.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2011-12-01 15:59:25 -0600
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/contactenos/style.css" for 127.0.0.1 at 2011-12-01 15:59:25 -0600
+
+ActionController::RoutingError (No route matches [GET] "/contactenos/style.css"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.2ms)
+
+
+Started GET "/assets/images/menu_bt.gif" for 127.0.0.1 at 2011-12-01 15:59:25 -0600
+Served asset /images/menu_bt.gif - 404 Not Found (11ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/menu_bt.gif"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.4ms)
+
+
+Started GET "/contactenos/style.css" for 127.0.0.1 at 2011-12-01 15:59:26 -0600
+
+ActionController::RoutingError (No route matches [GET] "/contactenos/style.css"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.3ms)
+
+
+Started GET "/contactenos/images/checked.gif" for 127.0.0.1 at 2011-12-01 15:59:26 -0600
+
+ActionController::RoutingError (No route matches [GET] "/contactenos/images/checked.gif"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.4ms)
+
+
+Started GET "/aboutus/index" for 127.0.0.1 at 2011-12-01 15:59:30 -0600
+  Processing by AboutusController#index as HTML
+Rendered aboutus/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 23ms (Views: 21.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 15:59:30 -0600
+Served asset /application.css - 304 Not Modified (45ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 15:59:30 -0600
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/aboutus/style.css" for 127.0.0.1 at 2011-12-01 15:59:30 -0600
+
+ActionController::RoutingError (No route matches [GET] "/aboutus/style.css"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.2ms)
+
+
+Started GET "/assets/iecss.css" for 127.0.0.1 at 2011-12-01 15:59:30 -0600
+Served asset /iecss.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2011-12-01 15:59:30 -0600
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/images/menu_bt.gif" for 127.0.0.1 at 2011-12-01 15:59:31 -0600
+Served asset /images/menu_bt.gif - 404 Not Found (9ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/menu_bt.gif"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.4ms)
+
+
+Started GET "/aboutus/style.css" for 127.0.0.1 at 2011-12-01 15:59:31 -0600
+
+ActionController::RoutingError (No route matches [GET] "/aboutus/style.css"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.1ms)
+
+
+Started GET "/aboutus/index" for 127.0.0.1 at 2011-12-01 16:00:12 -0600
+  Processing by AboutusController#index as HTML
+Rendered aboutus/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 28ms (Views: 25.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 16:00:12 -0600
+Served asset /application.css - 304 Not Modified (28ms)
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2011-12-01 16:00:12 -0600
+Served asset /style.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/iecss.css" for 127.0.0.1 at 2011-12-01 16:00:12 -0600
+Served asset /iecss.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 16:00:12 -0600
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/aboutus/style.css" for 127.0.0.1 at 2011-12-01 16:00:12 -0600
+
+ActionController::RoutingError (No route matches [GET] "/aboutus/style.css"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.3ms)
+
+
+Started GET "/assets/images/menu_bt.gif" for 127.0.0.1 at 2011-12-01 16:00:12 -0600
+Served asset /images/menu_bt.gif - 404 Not Found (13ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/menu_bt.gif"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.2ms)
+
+
+Started GET "/aboutus/style.css" for 127.0.0.1 at 2011-12-01 16:00:12 -0600
+
+ActionController::RoutingError (No route matches [GET] "/aboutus/style.css"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.5ms)
+
+
+Started GET "/products/index" for 127.0.0.1 at 2011-12-01 16:00:14 -0600
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "index"]]
+Completed 404 Not Found in 11ms
+
+ActiveRecord::RecordNotFound (Couldn't find Product with id=index):
+  app/controllers/products_controller.rb:7:in `show'
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.2ms)
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.1ms)
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.8ms)
+
+
+Started GET "/aboutus/index" for 127.0.0.1 at 2011-12-01 16:00:34 -0600
+  Processing by AboutusController#index as HTML
+Rendered aboutus/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 28ms (Views: 26.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 16:00:34 -0600
+Served asset /application.css - 304 Not Modified (38ms)
+
+
+Started GET "/assets/iecss.css" for 127.0.0.1 at 2011-12-01 16:00:34 -0600
+Served asset /iecss.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2011-12-01 16:00:34 -0600
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/aboutus/style.css" for 127.0.0.1 at 2011-12-01 16:00:34 -0600
+
+ActionController::RoutingError (No route matches [GET] "/aboutus/style.css"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.4ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 16:00:34 -0600
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/aboutus/style.css" for 127.0.0.1 at 2011-12-01 16:00:35 -0600
+
+ActionController::RoutingError (No route matches [GET] "/aboutus/style.css"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.3ms)
+
+
+Started GET "/assets/images/menu_bt.gif" for 127.0.0.1 at 2011-12-01 16:00:35 -0600
+Served asset /images/menu_bt.gif - 404 Not Found (13ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/menu_bt.gif"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.5ms)
+
+
+Started GET "/products/" for 127.0.0.1 at 2011-12-01 16:00:36 -0600
+  Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+Rendered shared/_login.html.erb (80.2ms)
+  [1m[35mProduct Load (0.8ms)[0m  SELECT "products".* FROM "products" ORDER BY released_at desc
+  [1m[36mCart Load (0.5ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = 3 LIMIT 1[0m
+  [1m[35mLineItem Load (0.9ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 2
+  [1m[36mProduct Load (0.6ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = 2 LIMIT 1[0m
+  [1m[35mProduct Load (0.7ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = 3 LIMIT 1
+Rendered carts/_details.html.erb (47.3ms)
+Rendered products/index.html.erb within layouts/application (429.7ms)
+Completed 200 OK in 452ms (Views: 441.0ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 16:00:37 -0600
+Served asset /application.css - 304 Not Modified (35ms)
+
+
+Started GET "/assets/iecss.css" for 127.0.0.1 at 2011-12-01 16:00:37 -0600
+Served asset /iecss.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 16:00:37 -0600
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2011-12-01 16:00:37 -0600
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/images/menu_bt.gif" for 127.0.0.1 at 2011-12-01 16:00:37 -0600
+Served asset /images/menu_bt.gif - 404 Not Found (13ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/menu_bt.gif"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.3ms)
+
+
+Started GET "/products/" for 127.0.0.1 at 2011-12-01 16:00:50 -0600
+  Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+Rendered shared/_login.html.erb (92.8ms)
+  [1m[35mProduct Load (0.9ms)[0m  SELECT "products".* FROM "products" ORDER BY released_at desc
+  [1m[36mCart Load (0.6ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = 3 LIMIT 1[0m
+  [1m[35mLineItem Load (1.7ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 2
+  [1m[36mProduct Load (0.6ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = 2 LIMIT 1[0m
+  [1m[35mProduct Load (0.5ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = 3 LIMIT 1
+Rendered carts/_details.html.erb (46.7ms)
+Rendered products/index.html.erb within layouts/application (444.0ms)
+Completed 200 OK in 471ms (Views: 457.7ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/assets/iecss.css" for 127.0.0.1 at 2011-12-01 16:00:50 -0600
+Served asset /iecss.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 16:00:50 -0600
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2011-12-01 16:00:50 -0600
+Served asset /style.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 16:00:50 -0600
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/images/menu_bt.gif" for 127.0.0.1 at 2011-12-01 16:00:51 -0600
+Served asset /images/menu_bt.gif - 404 Not Found (11ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/menu_bt.gif"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.4ms)
+
+
+Started GET "/products/" for 127.0.0.1 at 2011-12-01 16:02:24 -0600
+  Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+Rendered shared/_login.html.erb (186.2ms)
+  [1m[35mProduct Load (0.9ms)[0m  SELECT "products".* FROM "products" ORDER BY released_at desc
+  [1m[36mCart Load (0.7ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = 3 LIMIT 1[0m
+  [1m[35mLineItem Load (0.8ms)[0m  SELECT "line_items".* FROM "line_items" WHERE "line_items"."cart_id" = 2
+  [1m[36mProduct Load (0.6ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."id" = 2 LIMIT 1[0m
+  [1m[35mProduct Load (0.6ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = 3 LIMIT 1
+Rendered carts/_details.html.erb (134.8ms)
+Rendered products/index.html.erb within layouts/application (544.0ms)
+Completed 200 OK in 574ms (Views: 551.6ms | ActiveRecord: 20.2ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 16:02:25 -0600
+Served asset /application.css - 304 Not Modified (49ms)
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2011-12-01 16:02:25 -0600
+Served asset /style.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/iecss.css" for 127.0.0.1 at 2011-12-01 16:02:25 -0600
+Served asset /iecss.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 16:02:25 -0600
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/images/menu_bt.gif" for 127.0.0.1 at 2011-12-01 16:02:25 -0600
+Served asset /images/menu_bt.gif - 404 Not Found (9ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/menu_bt.gif"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.4ms)
+
+
+Started GET "/aboutus/index" for 127.0.0.1 at 2011-12-01 16:02:26 -0600
+  Processing by AboutusController#index as HTML
+Rendered aboutus/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 20ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 16:02:26 -0600
+Served asset /application.css - 304 Not Modified (48ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 16:02:26 -0600
+Served asset /application.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/iecss.css" for 127.0.0.1 at 2011-12-01 16:02:26 -0600
+Served asset /iecss.css - 304 Not Modified (1ms)
+
+
+Started GET "/aboutus/style.css" for 127.0.0.1 at 2011-12-01 16:02:26 -0600
+
+ActionController::RoutingError (No route matches [GET] "/aboutus/style.css"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.5ms)
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2011-12-01 16:02:27 -0600
+Served asset /style.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/images/menu_bt.gif" for 127.0.0.1 at 2011-12-01 16:02:27 -0600
+Served asset /images/menu_bt.gif - 404 Not Found (11ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/menu_bt.gif"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.3ms)
+
+
+Started GET "/aboutus/style.css" for 127.0.0.1 at 2011-12-01 16:02:27 -0600
+
+ActionController::RoutingError (No route matches [GET] "/aboutus/style.css"):
+  
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.7ms)
