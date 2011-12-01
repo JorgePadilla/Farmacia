@@ -1,20 +1,102 @@
-<img src="<%=getImagen @products.all[0].id%>"/> 
 <%= render :partial => "shared/login"%>
 
 <h1>Products</h1>
 
-<% for product in @products %>
-  <div class="product">
-    <h2><%= link_to product.name, product %></h2>
-    <div class="details">
-      <%= number_to_currency(product.price) %>
+<table border="0" align="center" cellspacing="50">
+  <tr>
+    <td align="center">
+      <%product=@products.all[0]%>
+      <h2><%= link_to product.name, product %></h2>
+      <img src="<%=getImagen product.id%>"/>
+      <p><%= number_to_currency(product.price) %></p>
       <% if logged_in? %>
-         |
-        <%= link_to "Add to Cart", carts_path(:product_id => product.id), :method => "post", :confirm => "Are you sure?", :remote => true %>
+      <p><%= link_to "Add to Cart", carts_path(:product_id => product.id), :method => "post", :confirm => "Are you sure?", :remote => true %></p>
       <% end %>
-    </div>
-  </div>
-<% end %>
+    </td>
+
+    <td align="center">
+      <%product=@products.all[1]%>
+      <h2><%= link_to product.name, product %></h2>
+      <img src="<%=getImagen product.id%>"/>
+      <p><%= number_to_currency(product.price) %></p>
+      <% if logged_in? %>
+      <p><%= link_to "Add to Cart", carts_path(:product_id => product.id), :method => "post", :confirm => "Are you sure?", :remote => true %></p>
+      <% end %>
+
+    <td align="center">
+      <%product=@products.all[2]%>
+      <h2><%= link_to product.name, product %></h2>
+      <img src="<%=getImagen product.id%>"/>
+      <p><%= number_to_currency(product.price) %></p>
+      <% if logged_in? %>
+      <p><%= link_to "Add to Cart", carts_path(:product_id => product.id), :method => "post", :confirm => "Are you sure?", :remote => true %></p>
+      <% end %>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <%product=@products.all[3]%>
+      <h2><%= link_to product.name, product %></h2>
+      <img src="<%=getImagen product.id%>"/>
+      <p><%= number_to_currency(product.price) %></p>
+      <% if logged_in? %>
+      <p><%= link_to "Add to Cart", carts_path(:product_id => product.id), :method => "post", :confirm => "Are you sure?", :remote => true %></p>
+      <% end %>
+    </td>
+
+    <td align="center">
+      <%product=@products.all[4]%>
+      <h2><%= link_to product.name, product %></h2>
+      <img src="<%=getImagen product.id%>"/>
+      <p><%= number_to_currency(product.price) %></p>
+      <% if logged_in? %>
+      <p><%= link_to "Add to Cart", carts_path(:product_id => product.id), :method => "post", :confirm => "Are you sure?", :remote => true %></p>
+      <% end %>
+    </td>
+
+    <td align="center">
+      <%product=@products.all[5]%>
+      <h2><%= link_to product.name, product %></h2>
+      <img src="<%=getImagen product.id%>"/>
+      <p><%= number_to_currency(product.price) %></p>
+      <% if logged_in? %>
+      <p><%= link_to "Add to Cart", carts_path(:product_id => product.id), :method => "post", :confirm => "Are you sure?", :remote => true %></p>
+      <% end %>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <%product=@products.all[6]%>
+      <h2><%= link_to product.name, product %></h2>
+      <img src="<%=getImagen product.id%>"/>
+      <p><%= number_to_currency(product.price) %></p>
+      <% if logged_in? %>
+      <p><%= link_to "Add to Cart", carts_path(:product_id => product.id), :method => "post", :confirm => "Are you sure?", :remote => true %></p>
+      <% end %>
+    </td>
+
+    <td align="center">
+      <%product=@products.all[7]%>
+      <h2><%= link_to product.name, product %></h2>
+      <img src="<%=getImagen product.id%>"/>
+      <p><%= number_to_currency(product.price) %></p>
+      <% if logged_in? %>
+      <p><%= link_to "Add to Cart", carts_path(:product_id => product.id), :method => "post", :confirm => "Are you sure?", :remote => true %></p>
+      <% end %>
+    </td>
+
+    <td align="center">
+      <%product=@products.all[8]%>
+      <h2><%= link_to product.name, product %></h2>
+      <img src="<%=getImagen product.id%>"/>
+      <p><%= number_to_currency(product.price) %></p>
+      <% if logged_in? %>
+      <p><%= link_to "Add to Cart", carts_path(:product_id => product.id), :method => "post", :confirm => "Are you sure?", :remote => true %></p>
+      <% end %>
+    </td>
+  </tr>
+</table> 
+
 
 <% if logged_in? && current_user.cart.present? && current_user.cart.line_items.present? %>
   <%= render :partial => "carts/details", :locals => { :cart => current_user.cart } %>

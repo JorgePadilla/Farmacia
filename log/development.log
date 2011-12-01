@@ -1166,3 +1166,525 @@ Served asset /application.css - 304 Not Modified (18ms)
 
 Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 09:47:46 -0600
 Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-01 11:01:43 -0600
+  Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.7ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY released_at desc[0m
+  [1m[35mUser Load (108.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+Rendered shared/_login.html.erb (183.2ms)
+  [1m[36mCart Load (0.4ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = 3 LIMIT 1[0m
+Rendered products/index.html.erb within layouts/application (565.4ms)
+Completed 200 OK in 773ms (Views: 658.3ms | ActiveRecord: 112.4ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 11:01:47 -0600
+Served asset /application.css - 304 Not Modified (73ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 11:01:47 -0600
+Served asset /application.js - 304 Not Modified (49ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-01 13:42:45 -0600
+  Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.9ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY released_at desc[0m
+Rendered products/index.html.erb within layouts/application (94941.6ms)
+Completed   in 95197ms
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-01 13:44:52 -0600
+  Processing by ProductsController#index as HTML
+  [1m[36mUser Load (381.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+Rendered shared/_login.html.erb (459.6ms)
+  [1m[35mProduct Load (0.8ms)[0m  SELECT "products".* FROM "products" ORDER BY released_at desc
+  [1m[36mCart Load (0.4ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = 3 LIMIT 1[0m
+Rendered products/index.html.erb within layouts/application (917.1ms)
+Completed 200 OK in 1122ms (Views: 734.9ms | ActiveRecord: 385.5ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 13:44:56 -0600
+Served asset /application.css - 200 OK (115ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 13:44:56 -0600
+Served asset /application.js - 200 OK (174ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-01 13:45:09 -0600
+  Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.7ms)[0m  SELECT "products".* FROM "products" ORDER BY released_at desc
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+Rendered shared/_login.html.erb (73.8ms)
+  [1m[35mCart Load (0.5ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."user_id" = 3 LIMIT 1
+Rendered products/index.html.erb within layouts/application (306.5ms)
+Completed 200 OK in 336ms (Views: 329.1ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 13:45:10 -0600
+Served asset /application.css - 304 Not Modified (21ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 13:45:10 -0600
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-01 13:45:52 -0600
+  Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.7ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY released_at desc[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+Rendered shared/_login.html.erb (74.3ms)
+Rendered products/index.html.erb within layouts/application (317.8ms)
+Completed 500 Internal Server Error in 337ms
+
+ActionView::Template::Error (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id):
+    12:     <h2><%= link_to product.name, product %></h2>
+    13:     <div class="details">
+    14:       <%= number_to_currency(product.price) %>
+    15:       <img src="<%=getImagen @products.all[i].id%>"/> 
+    16:       <% if logged_in? %>
+    17:          |
+    18:         <%= link_to "Add to Cart", carts_path(:product_id => product.id), :method => "post", :confirm => "Are you sure?", :remote => true %>
+  app/views/products/index.html.erb:15:in `block in _app_views_products_index_html_erb___2482920968151423190_35139440'
+  app/views/products/index.html.erb:10:in `_app_views_products_index_html_erb___2482920968151423190_35139440'
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.8ms)
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (25.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-01 13:46:05 -0600
+  Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY released_at desc[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+Rendered shared/_login.html.erb (158.7ms)
+  [1m[36mCart Load (0.4ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = 3 LIMIT 1[0m
+Rendered products/index.html.erb within layouts/application (292.6ms)
+Completed 200 OK in 313ms (Views: 306.5ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 13:46:06 -0600
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 13:46:06 -0600
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-01 13:47:02 -0600
+  Processing by ProductsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+Rendered shared/_login.html.erb (77.0ms)
+  [1m[36mProduct Load (0.9ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY released_at desc[0m
+Rendered products/index.html.erb within layouts/application (118.8ms)
+Completed 500 Internal Server Error in 142ms
+
+ActionView::Template::Error (undefined method `id' for 1:Fixnum):
+    7:     <h2><%= link_to product.name, product %></h2>
+    8:     <div class="details">
+    9:       <%= number_to_currency(product.price) %>
+    10:       <img src="<%=getImagen product.id%>"/> 
+    11:       <% if logged_in? %>
+    12:          |
+    13:         <%= link_to "Add to Cart", carts_path(:product_id => product.id), :method => "post", :confirm => "Are you sure?", :remote => true %>
+  app/helpers/application_helper.rb:3:in `getImagen'
+  app/views/products/index.html.erb:10:in `block in _app_views_products_index_html_erb___2482920968151423190_38276980'
+  app/views/products/index.html.erb:5:in `_app_views_products_index_html_erb___2482920968151423190_38276980'
+
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.3ms)
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.2ms)
+Rendered /home/userr/.rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (18.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-01 13:47:24 -0600
+  Processing by ProductsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+Rendered shared/_login.html.erb (157.2ms)
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY released_at desc[0m
+  [1m[35mCart Load (0.4ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."user_id" = 3 LIMIT 1
+Rendered products/index.html.erb within layouts/application (287.3ms)
+Completed 200 OK in 307ms (Views: 300.1ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 13:47:25 -0600
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 13:47:25 -0600
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-01 13:49:11 -0600
+  Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+Rendered shared/_login.html.erb (82.0ms)
+  [1m[35mProduct Load (0.8ms)[0m  SELECT "products".* FROM "products" ORDER BY released_at desc
+  [1m[36mCart Load (0.5ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = 3 LIMIT 1[0m
+Rendered products/index.html.erb within layouts/application (216.7ms)
+Completed 200 OK in 238ms (Views: 230.0ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 13:49:12 -0600
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 13:49:12 -0600
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-01 13:49:27 -0600
+  Processing by ProductsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+Rendered shared/_login.html.erb (76.1ms)
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY released_at desc[0m
+  [1m[35mCart Load (0.6ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."user_id" = 3 LIMIT 1
+Rendered products/index.html.erb within layouts/application (306.5ms)
+Completed 200 OK in 328ms (Views: 320.9ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 13:49:27 -0600
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 13:49:27 -0600
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-01 13:51:05 -0600
+  Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+Rendered shared/_login.html.erb (75.6ms)
+  [1m[35mProduct Load (0.9ms)[0m  SELECT "products".* FROM "products" ORDER BY released_at desc
+  [1m[36mCart Load (0.4ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = 3 LIMIT 1[0m
+Rendered products/index.html.erb within layouts/application (294.5ms)
+Completed 200 OK in 315ms (Views: 307.7ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 13:51:06 -0600
+Served asset /application.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 13:51:06 -0600
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/products/8" for 127.0.0.1 at 2011-12-01 13:51:23 -0600
+  Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mProduct Load (0.6ms)[0m  SELECT "products".* FROM "products" WHERE "products"."id" = ? LIMIT 1  [["id", "8"]]
+Rendered products/show.html.erb within layouts/application (109.5ms)
+Completed 200 OK in 136ms (Views: 127.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 13:51:23 -0600
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 13:51:23 -0600
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-01 13:54:41 -0600
+  Processing by ProductsController#index as HTML
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY released_at desc[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+Rendered shared/_login.html.erb (2.5ms)
+  [1m[36mCart Load (0.4ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = 3 LIMIT 1[0m
+Rendered products/index.html.erb within layouts/application (302.6ms)
+Completed 200 OK in 325ms (Views: 318.2ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 13:54:41 -0600
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 13:54:41 -0600
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-01 13:55:23 -0600
+  Processing by ProductsController#index as HTML
+  [1m[35mProduct Load (0.7ms)[0m  SELECT "products".* FROM "products" ORDER BY released_at desc
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+Rendered shared/_login.html.erb (2.9ms)
+  [1m[35mCart Load (0.5ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."user_id" = 3 LIMIT 1
+Rendered products/index.html.erb within layouts/application (339.4ms)
+Completed 200 OK in 363ms (Views: 355.6ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 13:55:24 -0600
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 13:55:24 -0600
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-01 13:56:46 -0600
+  Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+Rendered shared/_login.html.erb (84.5ms)
+  [1m[35mProduct Load (1.4ms)[0m  SELECT "products".* FROM "products" ORDER BY released_at desc
+  [1m[36mCart Load (0.5ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = 3 LIMIT 1[0m
+Rendered products/index.html.erb within layouts/application (180.0ms)
+Completed 200 OK in 200ms (Views: 192.1ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 13:56:47 -0600
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 13:56:47 -0600
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-01 13:57:06 -0600
+  Processing by ProductsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+Rendered shared/_login.html.erb (77.2ms)
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY released_at desc[0m
+  [1m[35mCart Load (0.4ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."user_id" = 3 LIMIT 1
+Rendered products/index.html.erb within layouts/application (165.3ms)
+Completed 200 OK in 185ms (Views: 178.3ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 13:57:07 -0600
+Served asset /application.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 13:57:07 -0600
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-01 13:57:33 -0600
+  Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+Rendered shared/_login.html.erb (71.3ms)
+  [1m[35mProduct Load (0.8ms)[0m  SELECT "products".* FROM "products" ORDER BY released_at desc
+  [1m[36mCart Load (0.5ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = 3 LIMIT 1[0m
+Rendered products/index.html.erb within layouts/application (168.4ms)
+Completed 200 OK in 188ms (Views: 181.2ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 13:57:33 -0600
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 13:57:33 -0600
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-01 13:57:43 -0600
+  Processing by ProductsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+Rendered shared/_login.html.erb (76.5ms)
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY released_at desc[0m
+  [1m[35mCart Load (0.4ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."user_id" = 3 LIMIT 1
+Rendered products/index.html.erb within layouts/application (161.3ms)
+Completed 200 OK in 182ms (Views: 175.2ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 13:57:44 -0600
+Served asset /application.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 13:57:44 -0600
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-01 13:58:06 -0600
+  Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+Rendered shared/_login.html.erb (74.0ms)
+  [1m[35mProduct Load (0.8ms)[0m  SELECT "products".* FROM "products" ORDER BY released_at desc
+  [1m[36mCart Load (0.4ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = 3 LIMIT 1[0m
+Rendered products/index.html.erb within layouts/application (159.6ms)
+Completed 200 OK in 179ms (Views: 172.2ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 13:58:07 -0600
+Served asset /application.css - 304 Not Modified (19ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 13:58:07 -0600
+Served asset /application.js - 304 Not Modified (13ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-01 13:59:59 -0600
+  Processing by ProductsController#index as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+Rendered shared/_login.html.erb (76.9ms)
+  [1m[36mProduct Load (0.9ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY released_at desc[0m
+  [1m[35mCart Load (0.5ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."user_id" = 3 LIMIT 1
+Rendered products/index.html.erb within layouts/application (167.9ms)
+Completed 200 OK in 188ms (Views: 180.6ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 13:59:59 -0600
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 13:59:59 -0600
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-01 14:00:12 -0600
+  Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+Rendered shared/_login.html.erb (72.6ms)
+  [1m[35mProduct Load (0.8ms)[0m  SELECT "products".* FROM "products" ORDER BY released_at desc
+  [1m[36mCart Load (0.5ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = 3 LIMIT 1[0m
+Rendered products/index.html.erb within layouts/application (158.8ms)
+Completed 200 OK in 178ms (Views: 171.4ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 14:00:12 -0600
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 14:00:12 -0600
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-01 14:00:36 -0600
+  Processing by ProductsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+Rendered shared/_login.html.erb (71.4ms)
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY released_at desc[0m
+  [1m[35mCart Load (0.4ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."user_id" = 3 LIMIT 1
+Rendered products/index.html.erb within layouts/application (157.3ms)
+Completed 200 OK in 177ms (Views: 170.3ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 14:00:37 -0600
+Served asset /application.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 14:00:37 -0600
+Served asset /application.js - 304 Not Modified (83ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-01 14:00:38 -0600
+  Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+Rendered shared/_login.html.erb (70.8ms)
+  [1m[35mProduct Load (0.8ms)[0m  SELECT "products".* FROM "products" ORDER BY released_at desc
+  [1m[36mCart Load (0.4ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = 3 LIMIT 1[0m
+Rendered products/index.html.erb within layouts/application (153.0ms)
+Completed 200 OK in 172ms (Views: 165.2ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 14:00:39 -0600
+Served asset /application.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 14:00:39 -0600
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-01 14:00:54 -0600
+  Processing by ProductsController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+Rendered shared/_login.html.erb (74.4ms)
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY released_at desc[0m
+  [1m[35mCart Load (0.4ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."user_id" = 3 LIMIT 1
+Rendered products/index.html.erb within layouts/application (166.4ms)
+Completed 200 OK in 187ms (Views: 179.5ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 14:00:54 -0600
+Served asset /application.css - 304 Not Modified (92ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 14:00:54 -0600
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-01 14:01:09 -0600
+  Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+Rendered shared/_login.html.erb (81.9ms)
+  [1m[35mProduct Load (0.9ms)[0m  SELECT "products".* FROM "products" ORDER BY released_at desc
+  [1m[36mCart Load (0.6ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = 3 LIMIT 1[0m
+Rendered products/index.html.erb within layouts/application (184.0ms)
+Completed 200 OK in 205ms (Views: 197.4ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 14:01:10 -0600
+Served asset /application.css - 304 Not Modified (20ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 14:01:10 -0600
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-01 14:02:40 -0600
+  Processing by ProductsController#index as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+Rendered shared/_login.html.erb (78.4ms)
+  [1m[36mProduct Load (0.8ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY released_at desc[0m
+  [1m[35mCart Load (0.4ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."user_id" = 3 LIMIT 1
+Rendered products/index.html.erb within layouts/application (299.4ms)
+Completed 200 OK in 319ms (Views: 312.6ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 14:02:41 -0600
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 14:02:41 -0600
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-01 14:03:08 -0600
+  Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+Rendered shared/_login.html.erb (161.7ms)
+  [1m[35mProduct Load (0.8ms)[0m  SELECT "products".* FROM "products" ORDER BY released_at desc
+  [1m[36mCart Load (0.5ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = 3 LIMIT 1[0m
+Rendered products/index.html.erb within layouts/application (310.7ms)
+Completed 200 OK in 331ms (Views: 323.9ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 14:03:08 -0600
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 14:03:08 -0600
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-01 14:03:15 -0600
+  Processing by ProductsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+Rendered shared/_login.html.erb (75.8ms)
+  [1m[36mProduct Load (0.9ms)[0m  [1mSELECT "products".* FROM "products" ORDER BY released_at desc[0m
+  [1m[35mCart Load (0.4ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."user_id" = 3 LIMIT 1
+Rendered products/index.html.erb within layouts/application (216.7ms)
+Completed 200 OK in 238ms (Views: 231.2ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 14:03:15 -0600
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 14:03:15 -0600
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-12-01 14:03:23 -0600
+  Processing by ProductsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+Rendered shared/_login.html.erb (74.9ms)
+  [1m[35mProduct Load (0.9ms)[0m  SELECT "products".* FROM "products" ORDER BY released_at desc
+  [1m[36mCart Load (0.5ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."user_id" = 3 LIMIT 1[0m
+Rendered products/index.html.erb within layouts/application (306.0ms)
+Completed 200 OK in 328ms (Views: 321.0ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/application.css" for 127.0.0.1 at 2011-12-01 14:03:23 -0600
+Served asset /application.css - 304 Not Modified (21ms)
+
+
+Started GET "/assets/application.js" for 127.0.0.1 at 2011-12-01 14:03:23 -0600
+Served asset /application.js - 304 Not Modified (5ms)

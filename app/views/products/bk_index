@@ -1,0 +1,57 @@
+<table border="1">
+  <tr>
+    <td>
+      row 1, cell 1
+    </td>
+    <td>
+      row 1, cell 2
+    </td>
+    <td>
+      row 1, cell 2
+    </td>
+  </tr>
+  <tr>
+    <td>
+      row 2, cell 1
+    </td>
+    <td>
+      row 2, cell 2
+    </td>
+    <td>
+      row 2, cell 2
+    </td>
+  </tr>
+  <tr>
+    <td>
+      row 2, cell 1
+    </td>
+    <td>
+      row 2, cell 2
+    </td>
+    <td>
+      row 2, cell 2
+    </td>
+  </tr>
+</table> 
+
+<%= render :partial => "shared/login"%>
+
+<h1>Products</h1>
+
+<% for product in @products %>
+  <div class="product">
+    <h2><%= link_to product.name, product %></h2>
+    <div class="details">
+      <%= number_to_currency(product.price) %>
+      <img src="<%=getImagen product.id%>"/>
+      <% if logged_in? %>
+         |
+        <%= link_to "Add to Cart", carts_path(:product_id => product.id), :method => "post", :confirm => "Are you sure?", :remote => true %>
+      <% end %>
+    </div>
+  </div>
+<% end %>
+
+<% if logged_in? && current_user.cart.present? && current_user.cart.line_items.present? %>
+  <%= render :partial => "carts/details", :locals => { :cart => current_user.cart } %>
+<% end %>
