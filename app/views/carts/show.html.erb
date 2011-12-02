@@ -1,0 +1,19 @@
+<h1>Shopping Cart</h1>
+<h3><%= link_to "Back", products_path %></h3>
+<p>You're about to purchase the following products.</p>
+<%= form_for @cart, :remote => true do |f| %>
+  <table>
+    <tr>
+      <th>Product</th>
+      <th>Amount</th>
+    </tr>
+    <%= f.fields_for :line_items do |builder| %>
+      <tr>
+        <td><%= builder.object.product.name %></td>
+        <td><%= builder.text_field :count, :style => "width: 25px;", :class => "text_field" %></td>
+      </tr>
+    <% end %>
+  </table>
+  <%= link_to "Checkout", new_order_path %>  |
+  <%= f.submit "Update" %>
+<% end %>

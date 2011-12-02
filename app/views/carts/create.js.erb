@@ -1,0 +1,11 @@
+$('#flash_notice').remove();
+
+$('#container').children().first().before('<div id="flash_notice">Product Added to Cart</div>');
+
+if ( $('#cart_details').length == 0 ){
+  $('#container').append("<%= escape_javascript(render :partial => "carts/details", :locals => { :cart => current_user.cart }) %>");
+}
+else {
+  $('#product_count').html("<%= escape_javascript(pluralize(@cart.product_count, "Product")) %>");
+  $('#cart_total').html("<%= escape_javascript(number_to_currency @cart.total) %>");
+}
