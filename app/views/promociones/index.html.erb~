@@ -23,8 +23,8 @@
         
             <div id="menu">
                 <ul>                                              
-                    <li><a title="">Inicio</a></li>
-                    <li><a href="#" title="">Acerca de</a></li>
+                    <li><a href="/home/index" title="">Inicio</a></li>
+                    <li><a href="/aboutus/index" title="">Acerca de</a></li>
                     <li><a href="" title="">Promoción</a></li>
                     <li><a href="#" title="">Contactenos</a></li>
                 </ul>
@@ -42,7 +42,7 @@
     	<div class="pattern_box">
             <div class="pattern_box_icon"><img src="/images/icon1.png" alt="" title="" width="70" height="112" /></div>
             <div class="pattern_content">
-            <h1> <span class="blue">Promociones</span></h1>
+            <h1> <span class="blue">Promoción</span></h1>
             <p class="pat" align="center">
            Objetivos: <br/>
 Mediante la mezcla de marketing atraer nuevos clientes <br/>
