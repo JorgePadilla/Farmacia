@@ -24,5 +24,5 @@ AuthSample::Application.routes.draw do
   resources :carts
   resources :orders
   
-  root :to => 'products#index'
+  root :to => 'root#index'
 end

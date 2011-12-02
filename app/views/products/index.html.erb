@@ -1,12 +1,15 @@
+<table border="0" align="center" cellspacing="0" width="450">
+<h3>
 <%= render :partial => "shared/login"%>
+</h3>
+</table>
+<table border="0" align="center" cellspacing="130">
 
-<%="<p>hollas</p>"%>
 
-<table border="0" align="center" cellspacing="150">
   <tr>
     <td align="center">
       <%product=@products.all[0]%>
-      <h2><%= link_to product.name, product %></h2>
+      <h2><%= link_to product.name, product %></h2><br/><br/>
       <p><img src="<%=getImagen product.id%>"/></p>
       <p><%= number_to_currency(product.price) %></p>
       <% if logged_in? %>
@@ -16,7 +19,7 @@
 
     <td align="center">
       <%product=@products.all[1]%>
-      <h2><%= link_to product.name, product %></h2>
+      <h2><%= link_to product.name, product %></h2><br/><br/>
       <p><img src="<%=getImagen product.id%>"/></p>
       <p><%= number_to_currency(product.price) %></p>
       <% if logged_in? %>
@@ -25,7 +28,7 @@
 
     <td align="center">
       <%product=@products.all[2]%>
-      <h2><%= link_to product.name, product %></h2>
+      <h2><%= link_to product.name, product %></h2><br/><br/>
       <p><img src="<%=getImagen product.id%>"/></p>
       <p><%= number_to_currency(product.price) %></p>
       <% if logged_in? %>
@@ -36,7 +39,7 @@
   <tr>
     <td align="center">
       <%product=@products.all[3]%>
-      <h2><%= link_to product.name, product %></h2>
+      <h2><%= link_to product.name, product %></h2><br/><br/>
       <p><img src="<%=getImagen product.id%>"/></p>
       <p><%= number_to_currency(product.price) %></p>
       <% if logged_in? %>
@@ -46,7 +49,7 @@
 
     <td align="center">
       <%product=@products.all[4]%>
-      <h2><%= link_to product.name, product %></h2>
+      <h2><%= link_to product.name, product %></h2><br/><br/>
       <p><img src="<%=getImagen product.id%>"/></p>
       <p><%= number_to_currency(product.price) %></p>
       <% if logged_in? %>
@@ -56,7 +59,7 @@
 
     <td align="center">
       <%product=@products.all[5]%>
-      <h2><%= link_to product.name, product %></h2>
+      <h2><%= link_to product.name, product %></h2><br/><br/>
       <p><img src="<%=getImagen product.id%>"/></p>
       <p><%= number_to_currency(product.price) %></p>
       <% if logged_in? %>
@@ -67,7 +70,7 @@
   <tr>
     <td align="center">
       <%product=@products.all[6]%>
-      <h2><%= link_to product.name, product %></h2>
+      <h2><%= link_to product.name, product %></h2><br/><br/>
       <p><img src="<%=getImagen product.id%>"/></p>
       <p><%= number_to_currency(product.price) %></p>
       <% if logged_in? %>
@@ -77,7 +80,7 @@
 
     <td align="center">
       <%product=@products.all[7]%>
-      <h2><%= link_to product.name, product %></h2>
+      <h2><%= link_to product.name, product %></h2><br/><br/>
       <p><img src="<%=getImagen product.id%>"/></p>
       <p><%= number_to_currency(product.price) %></p>
       <% if logged_in? %>
@@ -87,7 +90,7 @@
 
     <td align="center">
       <%product=@products.all[8]%>
-      <h2><%= link_to product.name, product %></h2>
+      <h2><%= link_to product.name, product %></h2><br/><br/>
       <p><img src="<%=getImagen product.id%>"/></p>
       <p><%= number_to_currency(product.price) %></p>
       <% if logged_in? %>
@@ -97,8 +100,10 @@
   </tr>
 </table> 
 
+<table border="0" align="center" cellspacing="0" >
   <input type="button" value="Ver orden" onclick="window.location.href='/orders/new'">
 
 <% if logged_in? && current_user.cart.present? && current_user.cart.line_items.present? %>
   <%= render :partial => "carts/details", :locals => { :cart => current_user.cart } %>
 <% end %>
+</table>
