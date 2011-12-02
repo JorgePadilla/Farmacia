@@ -1,5 +1,5 @@
 body {
-background:url(images/bg.jpg) no-repeat top center #97cae4;
+background:url(/images/bg.jpg) no-repeat top center #97cae4;
 margin:0px;
 padding:0px;
 font-family:Arial, Helvetica, sans-serif;
@@ -203,7 +203,7 @@ padding:10px 0 0 10px;
 color:#c3ced4;
 font-size:12px;
 font-weight:bold;
-width:550px;
+width:50px;
 padding:15px;
 text-align:center;
 float:left;
